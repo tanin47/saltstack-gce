@@ -1,0 +1,5 @@
+/ENV
+*.pyc
+/paramiko.log
+/master.pem
+/master.pub
