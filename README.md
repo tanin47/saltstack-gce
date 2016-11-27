@@ -47,6 +47,8 @@ Because we can immediately add the minion public key to the master's accepted ke
 
 Otherwise, we would wait for the minion VM to start and ssh in to grab the public key. That could take a few more minutes.
 
+In addition to that, we can't SSH into Windows, so we can't go that way for Windows.
+
 
 ### Why don't we use the bootstrap script from [salt-bootstrap](https://github.com/saltstack/salt-bootstrap)?
 
