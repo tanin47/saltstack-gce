@@ -1,9 +1,8 @@
-A masterful SaltStack architecture on Google Compute Engine
+Salt Masterful Architecture on Google Compute Engine
 ============================================================
 
-A Fabric script to setup the Salt master (on Ubuntu VM) and Salt minions (on both Ubuntu VM and Windows VM).
-
-This script should be used for educational purpose. Therefore, you should look at the source code and learn how it works.
+The project setups the Salt master (on Ubuntu VM) and Salt minions (on both Ubuntu VM and Windows VM).
+It should be used for educational purpose. Therefore, you should look at the source code and learn how it works.
 
 
 Installation
@@ -30,6 +29,11 @@ Usage
 3. Create an ubuntu minion with `python remote.py create_minion salt-ubuntu-minion-1`.
 4. Create a windows minion with `python remote.py create_minion salt-windows-minion-1`.
 5. SSH into the master with `gcloud compute ssh salt-master --project PROJECT` and ping all minions with `sudo salt '*' test.ping`.
+
+
+There are a few interesting parts:
+* How we use the Salt package to generate the key pair and their finger.
+* How we bootstrap the config and the key pair for minions on different platforms and on the master.
 
 
 Author
