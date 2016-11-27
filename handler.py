@@ -8,9 +8,9 @@ from salt import crypt
 from salt import utils
 
 
-PROJECT = 'test-salt-tanin'
+PROJECT = 'tanin-salt-cloud'
 ZONE = 'us-west1-a'
-MASTER_IP_ADDRESS = '104.198.15.98'
+MASTER_IP_ADDRESS = '104.198.3.174'
 
 
 MASTER_INSTANCE_NAME = 'salt-master'
